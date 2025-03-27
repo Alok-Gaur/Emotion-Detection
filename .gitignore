@@ -1,2 +1,11 @@
+# Environment File
 venv_emotion
+.env
+
+# Git API Token
 git_token.txt
+
+# Large Files
+test
+train
+Emotions_Dataset.zip
