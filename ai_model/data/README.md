@@ -21,8 +21,7 @@
     <div>
         The folders angry, happy and sad contains images to their corresponding emotions
     </div>
-
-    <div style="margin-top: 30px;">To download the dataset please to refer the link provided in the <b>Dataset URL.txt</b> file.</div>
-</body>
+    <div style="margin-top: 50px;">To download the dataset please to refer the link provided in the <b>Dataset URL.txt</b> file.</div>
+   </body>
 
 </html>
