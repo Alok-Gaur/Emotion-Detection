@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 #loading the dataset in tf.data.dataset format
-train_directory = os.path.join(os.getcwd(), 'ai_model', 'data', 'train', 'happy')
+train_directory = os.path.join(os.getcwd(), 'ai_model', 'data', 'train')
 train_dataset = tf.keras.utils.image_dataset_from_directory(
     train_directory,
     batch_size = config.BATCH_SIZE,
