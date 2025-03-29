@@ -1,7 +1,13 @@
 import os
-import config
+import sys
 import tensorflow as tf
 import matplotlib.pyplot as plt
+
+#importing Configurations from local environment
+config_path = os.path.abspath(os.path.join(__file__, "..\\..\\.."))
+sys.path.append(config_path)
+
+from configurations import config
 
 
 #loading the dataset in tf.data.dataset format
@@ -43,4 +49,4 @@ for image, label in train_dataset.take(1):
 #     plt.title("Happy")
 #     plt.axis("off")
 # plt.show()
-# print(files)
+# print(files)'
