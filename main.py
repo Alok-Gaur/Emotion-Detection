@@ -28,8 +28,9 @@ def main():
     elif args.mode == 'test':
         if (args.image_path or args.directory_path):
             if args.model_path:
-                print("Testing model....")
-                test_model(args.image_path, args.directory_path, args.model_path)
+                print("Testing mode....")
+                result = test_model(args.image_path, args.directory_path, args.model_path)
+                print("Test Result: ", result)
             else:
                 print("Please enter model path.")
         else:
@@ -37,8 +38,9 @@ def main():
     elif args.model == 'predict':
         if (args.image_path or args.directory_path):
             if args.model_path:
-                print("Testing model....")
-                make_prediction(args.image_path, args.directory_path, args.model_path)
+                print("Prediction mode....")
+                predictions = make_prediction(args.image_path, args.directory_path, args.model_path)
+                print("Predictions: ", predictions)
             else:
                 print("Please enter model path.")
         else:
