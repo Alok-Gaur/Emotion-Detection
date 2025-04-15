@@ -25,3 +25,4 @@ ACTIVATION2 = os.getenv("ACTIVATION2")
 #Base Model
 WEIGHTS = os.getenv("WEIGHTS")
 CHANNELS = int(os.getenv("CHANNELS"))
+MODEL_NAME = os.getenv("MODEL_NAME")

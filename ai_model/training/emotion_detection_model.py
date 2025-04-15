@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Dense, Flatten, BatchNormalization, Resizing, Rescaling
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils import register_keras_serializable
-from util import get_base_model
+from ai_model.training.util import get_base_model
 
 config_path = os.path.abspath(os.path.join(__file__, "../../.."))
 sys.path.append(config_path)

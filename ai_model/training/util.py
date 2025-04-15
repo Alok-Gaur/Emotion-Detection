@@ -28,6 +28,21 @@ class DatasetUtil:
         resize = tf.image.resize(image, (config.IM_SIZE, config.IM_SIZE))
         rescale = resize/255.
         return rescale, label
+    
+    def load_single_image(self, path):
+        image = tf.io.read_file(path)
+        image = tf.image.decode_image(image, channels=config.CHANNELS)
+        return image
+    
+    def get_absolute_path(self, path):
+        if os.path.isabs(path):
+            return path
+        return os.path.join(os.getcwd(), path)
+
+
+
+
+
 
 def scheduler(epochs, lr):
     if epochs == 1:

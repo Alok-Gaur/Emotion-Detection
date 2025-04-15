@@ -9,7 +9,7 @@ config_path = os.path.abspath(os.path.join(__file__, "../../.."))
 sys.path.append(config_path)
 
 from configurations import config
-def test_model(image_path:str, directory_path:str, model_path: str) -> List[str]:
+def make_prediction(image_path:str, directory_path:str, model_path: str) -> List[str]:
     #if a single image is given it will only predict and show the result
     #if a folder is given we assume that it is on proper structure
     #as mentioned on the readme file.
@@ -32,12 +32,6 @@ def test_model(image_path:str, directory_path:str, model_path: str) -> List[str]
     model = tf.keras.models.load_model(data_obj.get_absolute_path(model_path))
     history = model.predict(test_images)
 
-    # print("predictions - actual")
-    # for pred_label, true_label in zip(history, labels):
-    #     pred = tf.argmax(pred_label)
-    #     actual = tf.argmax(true_label)
-
-    #     print(f"{config.CLASS_NAME[pred]} - {config.CLASS_NAME[actual]}")
     prediction = []
     for pred in history:
         pred_label_index = tf.argmax(pred)
