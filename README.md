@@ -127,11 +127,7 @@ ai_model/data/test/happy/img2.jpg,happy
 
 <h2>👤 Author</h2>
 
-<p>Created by <strong>Your Name</strong></p>
+<p>Created by <strong>Alok Gaur</strong></p>
 <p>Feel free to connect on GitHub or LinkedIn!</p>
 
 <hr/>
-
-<h2>📜 License</h2>
-
-<p>This project is licensed under the MIT License.</p>
