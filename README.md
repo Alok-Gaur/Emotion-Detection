@@ -46,7 +46,8 @@ Emotion Detection/
 ├── gui_main2.py
 ├── main.py
 ├── .gitignore
-└── README.md
+|── README.md
+└── requirements.txt
 </pre>
 
 <hr/>
