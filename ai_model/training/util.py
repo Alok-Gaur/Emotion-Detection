@@ -32,7 +32,7 @@ class DatasetUtil:
     def load_single_image(self, path):
         image = tf.io.read_file(path)
         image = tf.image.decode_image(image, channels=config.CHANNELS)
-        return image
+        return tf.expand_dims(image, 0)
     
     def get_absolute_path(self, path):
         if os.path.isabs(path):

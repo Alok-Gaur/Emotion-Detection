@@ -1,7 +1,6 @@
 import os
 import sys
 import tensorflow as tf
-from tensorflow.keras.applications import ResNet50V2
 from ai_model.training.util import DatasetUtil
 from typing import List
 

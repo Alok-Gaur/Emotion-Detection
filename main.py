@@ -35,7 +35,7 @@ def main():
                 print("Please enter model path.")
         else:
             print("Please enter image or directory path!")
-    elif args.model == 'predict':
+    elif args.mode == 'predict':
         if (args.image_path or args.directory_path):
             if args.model_path:
                 print("Prediction mode....")
